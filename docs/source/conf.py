@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Robot Co-Sim'
+copyright = '2021, Chris Dong and Dima Nikiforov'
+author = 'Chris Dong and Dima Nikiforov'
 
 release = '0.1'
 version = '0.1.0'
