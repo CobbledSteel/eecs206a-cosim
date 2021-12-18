@@ -73,11 +73,11 @@ open source drone released with detailed assembly documentation
 of the software stack we plan on running on both the flight controller
 and companion computer is depicted in Figure [3].
 
-.. image:: ./images/Hardware Architecture.png
+.. image:: ./images/Hardware\ Architecture.png
 
-.. image:: ./images/High Level Control.png
+.. image:: ./images/High\ Level\ Control.png
 
-.. image:: ./images/Flight Control.png
+.. image:: ./images/Flight\ Control.png
 
 
 Secondly, a key component of our work involves developing the
