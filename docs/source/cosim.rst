@@ -5,7 +5,7 @@ A fruit fly can compute workloads including trajectory planning,
 visual/inertial odometry (VIO), classification, and closed-loop control,
 all while only consuming 120 nW [1]. A
 state-of-the-art VIO ASIC consumes 2 mW [2]---over
-10,000$\times$ more power. With such a stark difference, biology
+10,000 times more power. With such a stark difference, biology
 suggests vast optimization opportunities for autonomous systems.
 However, closing the gap becomes increasingly challenging; with the end
 of Moore's Law and Dennard Scaling, it is no longer feasible to rely on
@@ -69,7 +69,7 @@ Figure [1] In this configuration, we plan to have
 both the flight controller and companion computer on-board the drone, as
 this design point has more interesting constraints for the companion
 computer SoC. A possible candidate drone for this project is the
-[ASPLOS21-Drone](https://github.com/ramyadhadidi/ASPLOS21-Drone), an
+ASPLOS21-Drone, an
 open source drone released with detailed assembly documentation
 [12]. In addition to the hardware, a preliminary draft
 of the software stack we plan on running on both the flight controller
@@ -79,14 +79,13 @@ and companion computer is depicted in Figure [3].
 Secondly, a key component of our work will be developing the
 co-simulation infrastructure for our UAV. Our work will build upon two
 existing simulators. For simulating UAV dynamics and visual rendering we
-plan on using [AirSim](https://microsoft.github.io/AirSim/), a simulator
+plan on using AirSim simulator
 based on Unreal Engine developed by Microsoft [13]. For
 cycle-accurate SoC simulation, we plan on using
-[FireSim](https://fires.im), an FPGA-accelerated RTL simulator developed
-at the ADEPT Lab at UC Berkeley [@firesim]. A top level diagram of our
+FireSim, an FPGA-accelerated RTL simulator developed
+at the ADEPT Lab at UC Berkeley. A top level diagram of our
 planned infrastructure is depicted in
-Figure [5](#fig:simarchitecture){reference-type="ref"
-reference="fig:simarchitecture"}, with components that we expect to make
+Figure [5], with components that we expect to make
 major modifications to highlighted in red. These components mainly
 consist of the target-to-host bridges found in FireSim, which are
 responsible for the communication and synchronization between the host
@@ -96,8 +95,7 @@ elapsed in the RTL simulation with the amount of time simulated in
 AirSim, as well as to schedule the data transfers between AirSim and the
 SoC I/O modeled by FireSim. Before moving robotics software to the
 FireSim simulations, we will evaluate the RISC-V ports in a QEMU session
-as depicted in Figure [4](#fig:qemu){reference-type="ref"
-reference="fig:qemu"}.
+as depicted in Figure [4].
 
 The final component of our project will involve generating SoC instances
 on which we will evaluate our software stack. For our project, we will
@@ -106,19 +104,19 @@ This is because the flight controller can be implemented using a
 low-power microcontroller, and provides no benefit from being
 accelerated as the frequency of the flight controller loop is bounded by
 the physical properties of an UAV rather than by the available compute
-capabilities [@hadidi-designspace]. On the other hand, accelerating high
+capabilities [12]. On the other hand, accelerating high
 level control tasks in a HIL setup has been shown to improve
 quality-of-flight metrics in quadrotors, such as mission time and
-maximum velocity [@boroujerdian2018mavbench]. Because these high level
+maximum velocity [10]. Because these high level
 control tasks run on the companion computer, we identified this unit for
 our design-space exploration. Developing new custom hardware
 accelerators is out of the scope of this project. However, we still plan
 on evaluating configurations of existing hardware, including the
-in-order Rocket CPU [@asanovic2016rocket], the out-of-order superscalar
-BOOM CPU [@zhao2020sonicboom], and Gemmini, a systolic array hardware
-generator [@genc2021gemmini]. We plan on generating hardware designs
+in-order Rocket CPU [15], the out-of-order superscalar
+BOOM CPU [16], and Gemmini, a systolic array hardware
+generator [17]. We plan on generating hardware designs
 using these components using Chipyard, an SoC generator developed by the
-ADEPT Lab at UC Berkeley [@chipyard]. While discovering an optimal SoC
+ADEPT Lab at UC Berkeley [18]. While discovering an optimal SoC
 configuration is out of the scope of this project, we plan on using the
 designs to evaluate the co-simulation infrastructure.
 
@@ -129,22 +127,6 @@ also be explored through the simulated environment. Similarly, high
 level control and planning algorithms will be deployed on both the
 physical and simulated drones.
 
-![An example software stack for both the flight controller and the
-companion
-computer.[]{label="fig:dronesoftware"}](img/Flight Control.png "fig:"){#fig:dronesoftware
-width="\linewidth"}\
-![An example software stack for both the flight controller and the
-companion
-computer.[]{label="fig:dronesoftware"}](img/High Level Control.png "fig:"){#fig:dronesoftware
-width="\linewidth"}
-
-![Top level architecture for evaluating ROS workloads on the RISC-V
-software stack.[]{label="fig:qemu"}](img/AirSim-QEMU.png){#fig:qemu
-width="0.8\linewidth"}
-
-![Top level architecture for the proposed co-simulation
-architecture.[]{label="fig:simarchitecture"}](img/AirSim-FireSim.png){#fig:simarchitecture
-width="\linewidth"}
 
 Related Work
 ============
