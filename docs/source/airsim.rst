@@ -1,9 +1,15 @@
-.. image:: ./images/qemu_demo.png
 
 
 Summary
 =========
 This document provides installation instructions for deploying AirSim in an AWS environment. Nice DCV is used as a graphical session manager that supports hardware-accelerated rendering for the simulated graphics. Additionally this document explains how to create an AWS instance and install AirSim. Further airsim documentation can be found at https://microsoft.github.io/AirSim/.
+
+.. figure:: ./images/qemu_demo.png
+   :scale: 20 %
+   :alt: Figure 1
+
+   Fig. 1: Controlling AirSim from within a QEMU environment
+
 
 Setup
 ======
