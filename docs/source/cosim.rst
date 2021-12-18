@@ -148,6 +148,7 @@ architectural simulator [16]. Fromajo differs from this
 co-simulation infrastructure, however, as it is meant to be a platform
 for verification, and compares two instruction traces rather than
 integrating two simulators to support closed-loop feedback.
+ image:: ./images/AirSim-FireSim.png
 
 Simulation-Based Design Space Exploration of UAV Hardware
 ---------------------------------------------------------
