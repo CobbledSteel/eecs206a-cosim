@@ -254,6 +254,14 @@ A representation of all the parts needed for the drone are depicted in Figure [5
 
    Fig. 5: A breakdown of all parts used to build the drone.
 
+.. tabularcolums:: |p{1cm}|p{7cm}|p{5cm}|p{1cm}|
+
+.. csv-table:: Bill of Materials 
+   :file: _parts.csv
+   :header-rows: 1
+   :class: longtable
+   :widths: 1 1
+
 
 +---------------------+----------+--------+----------+
 + Component           +  Price   + Vendor +	Quantity +
