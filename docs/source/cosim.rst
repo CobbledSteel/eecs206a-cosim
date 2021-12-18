@@ -833,3 +833,9 @@ Systems Using Wolfram SystemModeler. Springer, 2020, pp. 23–87.
 H. Tyagi, “Cornet: A co-simulation middleware for robot networks,”
 in 2020 International Conference on COMmunication Systems & NET-
 workS (COMSNETS). IEEE, 2020, pp. 245–251.
+
+Acknowledgements
+====================
+This material is based upon work supported by the National Science Foundation under Grant No. (CCF-1955450). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the authors and do not necessarily reflect the views of the National Science Foundation.
+
+This project was, in part, funded by the U.S. Government under the DARPA RTML program (contract FA8650-20-2-7006). The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the U.S. Government.
