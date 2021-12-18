@@ -1,3 +1,6 @@
+.. image:: ./images/qemu_demo.png
+
+
 * Setting up an AWS instance
     + Create an AWS account
     + Setup a login key for your account and download it onto your local machine
