@@ -295,7 +295,17 @@ A representation of all the parts needed for the drone are depicted in Figure [5
 
 Assembly and Bringup
 -------------------
-The drone was assembled following instructions in the BuildGuide of the ASPLOS21-Drone, found at `Build GUide <https://github.com/ramyadhadidi/ASPLOS21-Drone/blob/main/BuildGuide/Build-Guide.pdf>`_.
+The drone (named Baby Bird) was assembled following instructions in the BuildGuide of the ASPLOS21-Drone, found `here <https://github.com/ramyadhadidi/ASPLOS21-Drone/blob/main/BuildGuide/Build-Guide.pdf>`_.
+
+Changes compared to the buildguide was the fact that A Raspberry Pi 4 was used instead of a Raspberry Pi 3, the ESCs had built-in bullet connectors, and that a Raspicam was attached to enable vision.
+
+After assembly, the Baby Bird should look as depicted in Figure [6].
+
+.. figure:: ./images/drone_final.jpg
+   :scale: 20 %
+   :alt: Figure 6
+
+   Fig. 6: A top view of Baby Bird, with the battery disconnected and powered off.
 
 ROS Infrastructure
 ------------------------
