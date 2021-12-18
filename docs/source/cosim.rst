@@ -621,6 +621,21 @@ Results
 
 Conclusion
 ============
+Overall, while it was possible to implement all the base requirements for the project, doing so was much more challenging than expected. To begin with, there were a lot of seperate peices of infrastructure that needed to be intergrated, which needed to use a completely different set of APIs and systems:
+
+* Unreal Engine (Unreal API)
+* AirSim (AirSim RPC API)
+* RISC-V QEMU (FireMarshal, Fedora)
+* FireSim (FPGA flows, Chisel HDL, Bridges and Bridge Drivers)
+* ROS (mavros, MAVLink, raspicam)
+* ArduCopter (MAVLink, PPM)
+* AWS EC2 instances
+
+And each required its own setup and build guide, as well as deployment. Some additional unexpected challenges involved configuring ArduPilot/ArduCopter using MAVLink, as the particular sensing configuration we were using was not officially documented. Additionally, we did not have good GPS signals in indoor flights, so we did not have a fallback we could use that would work by default. Finally, during the last week of the project AWS had a major outage in the region that we were using for our EC2 instances. This demonstrated the amount of dependencies in our environment, and the challenges that one would face if there were any issues in each domain.
+
+However, despite all this we were still able to deploy all of the base requirements that we had planned. In terms of the physical prototyping we successfully assembled Baby Bird, and had working flight controller integrated with basic high level control in ROS. Second, we were able to port the core ROS Noetic libraries to RISC-V. Next, we were able to interface AirSim with QEMU, and made images to deploy to FireSim. Finally, we were able to build multi-core Rocket designs using Chipyard for sinulating our workloads. Finally, we were able to document the steps and challenges we faced along the way while trying to set up the infrastructure.
+
+We plan to use this project as a baseline for doing our co-simulation and design-space-exploration work for our future research. To continue to improve the project, we plan to  have a more polished automated flow for deploying the project, rather than manually having to follow each setup guide listed in this document. Additionally, we plan to continue to develop our support for ROS so we can actually run meaningful workloads in QEMU and FireSim. Next, we plan to do measurements on Baby Bird to get latency readings for I/O and memory that we will use as references for our simulated communication. Finally, we plan to use this infrastructure to pick a design point for a RISC-V SoC, and target our design for a tapeout in the next year.
 
 Team 
 =================
