@@ -235,9 +235,27 @@ be explored through the simulated environment. Similarly, high
 level control and planning algorithms will be deployed on both the
 physical and simulated drones.
 
+Co-Simulation Implementation
+==============================
 
-Implementation
-================
+Physical Drone Implementation
+==============================
+
+The design was built from commercially avalable parts, and assembled by the team. The overall design is based off of the ASPLOS21-Drone, which provided a build guide and a starting point for reference software. However, the ASPLOS21-Drone did not come with a bill of materials, so some adjustments were made to the construction of the drone compared to the paper. Additionally, to support some of the features needed for indoor flight, several changes had to be made to the software implementation on board the drone.
+
+Bill of Materials
+-------------------
+
+Assembly and Bringup
+-------------------
+
+ROS Infrastructure
+------------------------
+
+Configuration and Software
+---------------------------
+
+
 
 Tasks, Milestones, and Assessment
 =================================
