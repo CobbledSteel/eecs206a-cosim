@@ -687,8 +687,7 @@ infrastructures and environments at the ADEPT Lab.
     – ADEPT Lab @ UC Berkeley
         - Design and integration of hardware accelerators in heterogeneous SoCs
     – AALP @ Purdue University
-        - Locality aware data management for multi-GPU
-    systems
+        - Locality aware data management for multi-GPU systems
     – SoCET @ Purdue University
         - Custom hardware extensions for accelerating machine learning on an embedded processor
     – CAM2@ Purdue University
@@ -719,14 +718,14 @@ in simulation and on the real drone.
 Collaboration
 -------------
 
-While we plan on collaborating throughout the project, we will make sure
+While we collaborating throughout the project in general, we have made sure
 to only do drone hardware prototyping and testing when both group
-members are present in order to follow lab safety protocols. We will
-also collaborate heavily to ensure that we can successfully integrate
+members are present in order to follow lab safety protocols. We also collaborate heavily to ensure that we can successfully integrate
 the infrastructure components that we develop.
 
 Additional Materials
 =====================
+Code repositories and disk images are found in the implementation section.
 
 References
 ============
