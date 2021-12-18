@@ -73,11 +73,24 @@ open source drone released with detailed assembly documentation
 of the software stack we plan on running on both the flight controller
 and companion computer is depicted in Figure [3].
 
-.. image:: ./images/Hardware\ Architecture.png
+.. figure:: ./images/Hardware\ Architecture.png
+   :scale: 40 %
+   :alt: Figure 3
 
-.. image:: ./images/High\ Level\ Control.png
+   Fig. 1: Electronics top level diagram for the proposed UAV.
 
-.. image:: ./images/Flight\ Control.png
+.. figure:: ./images/High\ Level\ Control.png
+   :scale: 40 %
+   :alt: Figure 3
+
+   Fig. 2: An example software stack for both the flight controller and the companion computer.
+
+.. figure:: ./images/Flight\ Control.png
+   :scale: 40 %
+   :alt: Figure 3
+
+   Fig. 2: An example software stack for both the flight controller and the companion computer.
+
 
 
 Secondly, a key component of our work involves developing the
@@ -162,7 +175,7 @@ integrating two simulators to support closed-loop feedback.
    Fig. 3: Top level architecture for evaluating ROS workloads on the RISC-V software stack.
 
 .. figure:: ./images/AirSim-FireSim.png
-   :scale: 30 %
+   :scale: 100 %
    :alt: Figure 4
 
    Fig. 4: Top level architecture for the proposed co-simulation architecture
