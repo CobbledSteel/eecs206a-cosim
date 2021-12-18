@@ -79,24 +79,23 @@ co-simulation infrastructure for our UAV. Our work will build upon two
 existing simulators. For simulating UAV dynamics and visual rendering we
 plan on using AirSim simulator
 based on Unreal Engine developed by Microsoft [13]. For
-cycle-accurate SoC simulation, we plan on using
+cycle-accurate SoC simulation, we use
 FireSim, an FPGA-accelerated RTL simulator developed
 at the ADEPT Lab at UC Berkeley. A top level diagram of our
-planned infrastructure is depicted in
-Figure [5], with components that we expect to make
+infrastructure is depicted in Figure [5], with components that we expect to make
 major modifications to highlighted in red. These components mainly
 consist of the target-to-host bridges found in FireSim, which are
 responsible for the communication and synchronization between the host
 CPU managing the RTL simulation, and the target FPGA accelerating the
-simulation. Our modifications would need to synchronize the clock cycles
+simulation. Our modifications synchronize the clock cycles
 elapsed in the RTL simulation with the amount of time simulated in
 AirSim, as well as to schedule the data transfers between AirSim and the
 SoC I/O modeled by FireSim. Before moving robotics software to the
-FireSim simulations, we will evaluate the RISC-V ports in a QEMU session
+FireSim simulations, we evaluate the RISC-V ports in a QEMU session
 as depicted in Figure [4].
 
-The final component of our project will involve generating SoC instances
-on which we will evaluate our software stack. For our project, we will
+The final component of our project involves generating SoC instances
+on which we evaluate our software stack. For our project, we
 focus on evaluating custom hardware for an on-board companion computer.
 This is because the flight controller can be implemented using a
 low-power microcontroller, and provides no benefit from being
@@ -108,20 +107,19 @@ quality-of-flight metrics in quadrotors, such as mission time and
 maximum velocity [10]. Because these high level
 control tasks run on the companion computer, we identified this unit for
 our design-space exploration. Developing new custom hardware
-accelerators is out of the scope of this project. However, we still plan
-on evaluating configurations of existing hardware, including the
+accelerators is out of the scope of this project. However, we still work on evaluating configurations of existing hardware, including the
 in-order Rocket CPU [15], the out-of-order superscalar
 BOOM CPU [16], and Gemmini, a systolic array hardware
-generator [17]. We plan on generating hardware designs
+generator [17]. We generate hardware designs
 using these components using Chipyard, an SoC generator developed by the
 ADEPT Lab at UC Berkeley [18]. While discovering an optimal SoC
-configuration is out of the scope of this project, we plan on using the
+configuration is out of the scope of this project, we use the
 designs to evaluate the co-simulation infrastructure.
 
-The project will incorporate the sensing and actuation through the use
-of the ASPLOS21-Drone, which will act as a physical reference design for
-the co-simulation infrastructure. However, sensing and actuation will
-also be explored through the simulated environment. Similarly, high
+The project incorporate the sensing and actuation through the use
+of the ASPLOS21-Drone, which acts as a physical reference design for
+the co-simulation infrastructure. However, sensing and actuation have also 
+be explored through the simulated environment. Similarly, high
 level control and planning algorithms will be deployed on both the
 physical and simulated drones.
 
@@ -145,8 +143,7 @@ host, as typically FireSim bridges are configured to be deterministic
 with respect to transactions initiated by a target device. Additionally,
 while co-simulation projects have been built using FireSim, such as the
 Fromajo project, they differ in scope from this co-simulator. Fromajo is
-used to validate FireSim simulations against the Dromajo [19
-]
+used to validate FireSim simulations against the Dromajo [19]
 architectural simulator [16]. Fromajo differs from this
 co-simulation infrastructure, however, as it is meant to be a platform
 for verification, and compares two instruction traces rather than
@@ -157,7 +154,7 @@ Simulation-Based Design Space Exploration of UAV Hardware
 
 Several projects have used simulation methods to evaluate the impact of
 custom hardware on the flight performance of UAVs. One significant work
-presents MAVBench [@boroujerdian2018mavbench], a closed-loop
+presents MAVBench[10], a closed-loop
 benchmarking suite based on AirSim. MAVBench profiled several UAV
 workloads such as scanning, package delivery, and 3D mapping in a HIL
 environment, running flight controller code on a Pixhawk board, and
@@ -218,7 +215,8 @@ related with third-party components. We divided the tasks into Base,
 Target, and Reach, where we plan to complete base tasks by mid November,
 Target tasks by the project deadline, and Reach tasks if time permits.
 As this is a continuing research project, we plan on continuing this
-infrastructure development after the semester ends.\
+infrastructure development after the semester ends.
+
 We will assess the success of this project both on the milestones met,
 but also by the documentation and analysis of areas of improvement in
 the robotics, open source hardware, and electronic design automation
