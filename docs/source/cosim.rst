@@ -359,27 +359,13 @@ members are present in order to follow lab safety protocols. We will
 also collaborate heavily to ensure that we can successfully integrate
 the infrastructure components that we develop.
 
-Bill of Materials
-=================
 
-Use of Lab Resources
---------------------
 
-We do not plan on using any of the EECS 206A lab resources for this
-project.
-
-Other Robotic Platforms
------------------------
-
-We plan on using the ASPLOS21-Drone to perform physical prototyping for
-this project.
-
-![image](img/206A.pdf){width="\linewidth"}
-
-Items for Purchase
+Items for physical prototyping
 ------------------
 
-This project will involve purchasing components for physical
+We plan on using the ASPLOS21-Drone to perform physical prototyping for
+this project. This project will involve purchasing components for physical
 prototyping, as well as paying for the use of AWS infrastructure for
 software development and running GPU and FPGA accelerated simulations.
 The bill of materials for the drone is shown in
