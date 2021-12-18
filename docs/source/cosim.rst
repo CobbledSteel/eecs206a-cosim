@@ -300,7 +300,7 @@ Changes compared to the buildguide was the fact that A Raspberry Pi 4 was used i
 After assembly, the Baby Bird should look as depicted in Figure [6].
 
 .. figure:: ./images/drone_final.jpg
-   :scale: 20 %
+   :scale: 5 %
    :alt: Figure 6
 
    Fig. 6: A top view of Baby Bird, with the battery disconnected and powered off.
