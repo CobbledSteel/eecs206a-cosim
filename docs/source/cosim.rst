@@ -368,6 +368,8 @@ If this is functional, one can then connect to the drone using a ground control 
 * EK3_SRC2_VELZ = 6 (Secondary vertical velocity from External Nav)
 * EK3_SRC2_YAW = 6 (Secondary yaw/heading from External Nav)
 
+Alternatively, all software can be set up from the pre-built image found `here <https://drive.google.com/file/d/1SMRmIbvDc8y0SAXKeIau17e4_GMBGMAR/view?usp=sharing>`_. This just needs to be flashed onto an SD card with the Raspberry Pi.
+
 Co-Simulation Implementation
 ==============================
 At a high level the end-goal of the co-simulation infrastructure is to run and integrate both the AirSim and FireSim simulators. For practical purposes, these are deployed on different machines, one running Ubuntu 18.04 for AirSim, and the other running Centos for FireSim. The system can be viewed as in Figure [11]. In this case, AirSim runs on a `g4dn.2xlarge` instance of AWS, and the FireSim manager runs on a `c5.4xlarge` instance while the FireSim target simulator runs on a `f1.2xlarge` instance.
