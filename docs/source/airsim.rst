@@ -1,6 +1,14 @@
 .. image:: ./images/qemu_demo.png
 
 
+Summary
+=========
+This document provides installation instructions for deploying AirSim in an AWS environment. Nice DCV is used as a graphical session manager that supports hardware-accelerated rendering for the simulated graphics. Additionally this document explains how to create an AWS instance and install AirSim. Further airsim documentation can be found at https://microsoft.github.io/AirSim/.
+
+Setup
+======
+
+
 * Setting up an AWS instance
     + Create an AWS account
     + Setup a login key for your account and download it onto your local machine
@@ -10,6 +18,7 @@
     + Under the “AWS Marketplace” tab, select the “Ubuntu 18.04 LTS Desktop - NICE DCV (GPU) with NVIDIA Gaming Drivers” image
     + For instance type, select a g4dn instance, preferably g4dn.2xlarge
     + Allocate an EBS volume of at least 200GB
+    + For security, in addition to the default groups add a new rule for a TCP connection with port range 41451, with source 0.0.0.0/0
     + Launch the instance
 * Using NICE DCV to connect to a graphical session
     + Use ssh to login to your instance
