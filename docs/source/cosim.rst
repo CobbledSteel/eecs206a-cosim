@@ -156,10 +156,10 @@ for verification, and compares two instruction traces rather than
 integrating two simulators to support closed-loop feedback.
 
 .. figure:: ./images/AirSim-QEMU.png
-   :caption: Fig. 3: Top level architecture for evaluating ROS workloads on the RISC-V software stack.
+   Fig. 3: Top level architecture for evaluating ROS workloads on the RISC-V software stack.
 
 .. figure:: ./images/AirSim-FireSim.png
-   :caption: Fig. 4: Top level architecture for the proposed co-simulation architecture
+   Fig. 4: Top level architecture for the proposed co-simulation architecture
 
 Simulation-Based Design Space Exploration of UAV Hardware
 ---------------------------------------------------------
