@@ -252,12 +252,12 @@ A representation of all the parts needed for the drone are depicted in Figure [5
    :scale: 20 %
    :alt: Figure 5
 
-   Fig. 5: A breakdown of all parts used to build the drone.
+   Fig. 5: A breakdown of all parts used to build the drone. From the top left corner going clockwise: F450 Frame, Motors, Propellers, Raspicam, Raspberry Pi 4 B, 3C LiPo Battery, Navio2, GPS, ESC, RC Unit, PPM Encoder
 
 .. tabularcolums:: |p{1cm}|p{7cm}|p{5cm}|p{1cm}|
 
 .. csv-table:: Bill of Materials 
-   :file: _parts.csv
+   :file: parts.csv
    :header-rows: 1
    :class: longtable
    :widths: 1 1
@@ -295,6 +295,7 @@ A representation of all the parts needed for the drone are depicted in Figure [5
 
 Assembly and Bringup
 -------------------
+The drone was assembled following instructions in the BuildGuide of the ASPLOS21-Drone, found at `Build GUide <https://github.com/ramyadhadidi/ASPLOS21-Drone/blob/main/BuildGuide/Build-Guide.pdf>`_.
 
 ROS Infrastructure
 ------------------------
