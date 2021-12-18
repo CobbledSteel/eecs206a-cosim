@@ -52,7 +52,7 @@ modeling system dynamics and sensor data.
 Project Description
 ===================
 
-In this project we will develop co-simulation infrastructure to enable
+In this project we develop co-simulation infrastructure to enable
 the design space exploration of robotics SoCs. As a driving application,
 we will look at autonomous quadrotor systems. This is because UAVs make
 for an interesting design point due to the interactions between latency,
@@ -60,16 +60,14 @@ power, and weight constraints [12], as well as the fact
 that the SoCs used onboard UAVs are comparable in scale to those
 previously designed at the ADEPT Lab at UC Berkeley.
 
-In our project we plan on simulating a drone's hardware and software
+In our project we focus on simulating a drone's hardware and software
 stack, along with a physical design to be used as a reference
-implementation. While we have not selected a physical drone at this
-point, we plan on implementing a design that implements the computers,
+implementation. While we implemented a design that implements the computers,
 actuators, and sensors as depicted in
-Figure [1] In this configuration, we plan to have
+Figure [1] In this configuration, we have
 both the flight controller and companion computer on-board the drone, as
 this design point has more interesting constraints for the companion
-computer SoC. A possible candidate drone for this project is the
-ASPLOS21-Drone, an
+computer SoC. We use ASPLOS21-Drone for physical prototyping drone in this project, which is an
 open source drone released with detailed assembly documentation
 [12]. In addition to the hardware, a preliminary draft
 of the software stack we plan on running on both the flight controller
@@ -359,32 +357,16 @@ members are present in order to follow lab safety protocols. We will
 also collaborate heavily to ensure that we can successfully integrate
 the infrastructure components that we develop.
 
-Bill of Materials
-=================
 
-Use of Lab Resources
---------------------
 
-We do not plan on using any of the EECS 206A lab resources for this
-project.
-
-Other Robotic Platforms
------------------------
-
-We plan on using the ASPLOS21-Drone to perform physical prototyping for
-this project.
-
-![image](img/206A.pdf){width="\linewidth"}
-
-Items for Purchase
+Items for physical prototyping
 ------------------
 
-This project will involve purchasing components for physical
+We plan on using the ASPLOS21-Drone to perform physical prototyping for
+this project. This project will involve purchasing components for physical
 prototyping, as well as paying for the use of AWS infrastructure for
 software development and running GPU and FPGA accelerated simulations.
-The bill of materials for the drone is shown in
-Figure [\[fig:dronebudget\]](#fig:dronebudget){reference-type="ref"
-reference="fig:dronebudget"}. Additionally, we plan on using the
+The bill of materials for the drone. Additionally, we plan on using the
 following AWS EC2 instances using on-demand pricing: `c5.4xlarge`
 (Managing FireSim simulations, general software development),
 `g4dn.2xlarge` (Running GPU-accelerated drone simulations using AirSim),
