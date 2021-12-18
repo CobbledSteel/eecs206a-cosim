@@ -678,23 +678,23 @@ infrastructures and environments at the ADEPT Lab.
     – Undergraduate: BS in Computer Engineering and BA in Philosophy from Purdue University
 + Work Experience:
     – Bendix Commercial Vehicle Systems (1.5 Years)
-        ∗ Embedded Systems Design
-        ∗ Advanced Driver Assistance Systems
-        ∗ Systems Engineering
+        - Embedded Systems Design
+        - Advanced Driver Assistance Systems
+        - Systems Engineering
     – Advanced Micro Devices (3 months)
-        ∗ Design Verification Engineering
+        - Design Verification Engineering
 + Research Experience:
     – ADEPT Lab @ UC Berkeley
-        ∗ Design and integration of hardware accelerators in heterogeneous SoCs
+        - Design and integration of hardware accelerators in heterogeneous SoCs
     – AALP @ Purdue University
-        ∗ Locality aware data management for multi-GPU
+        - Locality aware data management for multi-GPU
     systems
     – SoCET @ Purdue University
-        ∗ Custom hardware extensions for accelerating machine learning on an embedded processor
+        - Custom hardware extensions for accelerating machine learning on an embedded processor
     – CAM2@ Purdue University
-        ∗ Computer vision for pedestrian detection on JPEG compressed data
+        - Computer vision for pedestrian detection on JPEG compressed data
     – Purdue Aerial Robotics @ Purdue University
-        ∗ PCB design for a flight controller board and a ground station antenna tracker
+        - PCB design for a flight controller board and a ground station antenna tracker
 
 Chris Dong
 ----------
@@ -709,12 +709,12 @@ in simulation and on the real drone.
     – Undergraduate: BS in Computer Science, BS in Mathematics, and BBA in Finance from UMass Amherst
 + Work Experience:
     – Amazon AWS: Project Manager@Robotics Lab
-        ∗ Coordinated full project-development lifecycle at Amazon AWS Robotics lab: strategic planning, requirements analysis, testing, and product launches.
+        - Coordinated full project-development lifecycle at Amazon AWS Robotics lab: strategic planning, requirements analysis, testing, and product launches.
     – Tesla: Application Developer Intern 
-        ∗ Developing an enterprise consumer-facing mobile application on Android in React Native enabling remote control on vehicles.
-        * Designing and implementing a content management system and user database for the IT Application Development Team
+        - Developing an enterprise consumer-facing mobile application on Android in React Native enabling remote control on vehicles.
+        - Designing and implementing a content management system and user database for the IT Application Development Team
     – 3R Water, Inc: Software Developer
-        ∗ Developed an enterprise climate-technology software and data platform on Android platforms for municipal stormwater agencies to address flooding and water quality issues and build climate resiliency.
+        - Developed an enterprise climate-technology software and data platform on Android platforms for municipal stormwater agencies to address flooding and water quality issues and build climate resiliency.
 
 Collaboration
 -------------
