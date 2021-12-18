@@ -138,7 +138,7 @@ The co-simulation infrastructure presented in this paper builds upon
 prior projects, integrating various functionality to support a full
 stack robotics co-simulation infrastructure. To begin, this project
 heavily depends on the RTL simulation and synchronization functionality
-functionality provided by FireSim [@firesim]. FireSim already has
+functionality provided by FireSim [14]. FireSim already has
 built-in synchronization support, used to provide deterministic behavior
 both between FPGA targets, and FPGA targets and hosts. However, the
 functionality that this project needs to build on top of FireSim is the
@@ -147,8 +147,9 @@ host, as typically FireSim bridges are configured to be deterministic
 with respect to transactions initiated by a target device. Additionally,
 while co-simulation projects have been built using FireSim, such as the
 Fromajo project, they differ in scope from this co-simulator. Fromajo is
-used to validate FireSim simulations against the Dromajo [@dromajo]
-architectural simulator [@zhao2020sonicboom]. Fromajo differs from this
+used to validate FireSim simulations against the Dromajo [19
+]
+architectural simulator [16]. Fromajo differs from this
 co-simulation infrastructure, however, as it is meant to be a platform
 for verification, and compares two instruction traces rather than
 integrating two simulators to support closed-loop feedback.
@@ -173,10 +174,10 @@ Closed-Loop Simulation of Custom Robotics Hardware and Systems
 --------------------------------------------------------------
 
 Another work that is relevant to this project is a prior co-simulation
-infrastructure developed at Linköping University [@acevedo2016fpga].
+infrastructure developed at Linköping University [20].
 This project functions as a HIL setup, co-simulating an FPGA running
 robotics workloads with the Wolfram SystemModeler simulation environment
-[@rozhdestvensky2020description]. An FPGA and host computer are
+[21]. An FPGA and host computer are
 connected using a serial interface for synchronization and data
 transfer. This project differs from prior FPGA prototyping attempts as
 it synchronizes FPGA cycles to match SystemModeler's update rate,
@@ -185,7 +186,7 @@ However, this project lacks several features compared to the proposed
 co-simulation infrastructure. First, rather than using a true
 cycle-exact ASIC simulation, the HIL co-simulator synchronizes against
 an FPGA implementation, which has different performance characteristics
-compared to an ASIC [@firesim]. Secondly, the HIL co-simulator currently
+compared to an ASIC [14]. Secondly, the HIL co-simulator currently
 only supports low-level hardware accelerators instead of an entire SoC
 supporting a full Linux stack. Having full-stack support is important
 for supporting and integrating projects that make use of the modern
@@ -196,7 +197,7 @@ standardized approach for integrating robotic software components.
 Finally, there have been prior attempts at co-simulating robotics
 simulations on top of the Gazebo/ROS ecosystem. One such project,
 CORNET, presents middleware that integrates a Gazebo simulation with a
-multiple UAV flight controllers [@acharya2020cornet]. As in this
+multiple UAV flight controllers [22]. As in this
 project, CORNET uses a custom Gazebo plugin to perform synchronization
 with external simulators. However, CORNET is intended to provide
 co-simulation between Gazebo and a network simulator instead of
