@@ -208,11 +208,10 @@ aspects into one system.
 Tasks, Milestones, and Assessment
 =================================
 
-This project will include a broad range of tasks, and relies heavily on
-infrastructure development. Accounting for this, we do not plan on
-accomplishing every task, given that there might be unexpected issues
+This project includes a broad range of tasks, and relies heavily on
+infrastructure development. Accounting for this, we have not accomplish every task, given that there might be unexpected issues
 related with third-party components. We divided the tasks into Base,
-Target, and Reach, where we plan to complete base tasks by mid November,
+Target, and Reach, where we completed base tasks by mid November,
 Target tasks by the project deadline, and Reach tasks if time permits.
 As this is a continuing research project, we plan on continuing this
 infrastructure development after the semester ends.
@@ -333,7 +332,7 @@ Team Member Roles
 Dima Nikiforov
 --------------
 
-Dima will be in charge of tasks involving porting software libraries to
+Dima is in charge of tasks involving porting software libraries to
 RISC-V, developing FireSim to support co-simulation, and generating
 hardware designs, given their experience working with similar
 infrastructures and environments at the ADEPT Lab.
@@ -341,7 +340,7 @@ infrastructures and environments at the ADEPT Lab.
 Chris Dong
 ----------
 
-Chris will be developing the software infrastructure via ROS and AirSim,
+Chris is in charge of developing the software infrastructure via ROS and AirSim,
 setting up AirSim in AWS server and running built-in simple flight
 controller, along with developing and testing high level algorithms both
 in simulation and on the real drone.
@@ -360,12 +359,11 @@ the infrastructure components that we develop.
 Items for physical prototyping
 ------------------
 
-We plan on using the ASPLOS21-Drone to perform physical prototyping for
-this project. This project will involve purchasing components for physical
+We use the ASPLOS21-Drone to perform physical prototyping for
+this project. This project involves purchasing components for physical
 prototyping, as well as paying for the use of AWS infrastructure for
 software development and running GPU and FPGA accelerated simulations.
-The bill of materials for the drone. Additionally, we plan on using the
-following AWS EC2 instances using on-demand pricing: `c5.4xlarge`
+Additionally, we also use the following AWS EC2 instances using on-demand pricing: `c5.4xlarge`
 (Managing FireSim simulations, general software development),
 `g4dn.2xlarge` (Running GPU-accelerated drone simulations using AirSim),
 and `f1.2xlarge` (Running FPGA-accelerated RTL simulations in FireSim.)
