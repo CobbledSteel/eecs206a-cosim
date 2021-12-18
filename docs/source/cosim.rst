@@ -609,8 +609,6 @@ Additionally, we also use the following AWS EC2 instances using on-demand pricin
 (Managing FireSim simulations, general software development),
 `g4dn.2xlarge` (Running GPU-accelerated drone simulations using AirSim),
 and `f1.2xlarge` (Running FPGA-accelerated RTL simulations in FireSim.)
-Funding for purchasing components will be provided by grants through the
-ADEPT Lab.
 
 Results
 ============
