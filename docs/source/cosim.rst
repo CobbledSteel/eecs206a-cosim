@@ -54,7 +54,7 @@ Project Description
 
 In this project we develop co-simulation infrastructure to enable
 the design space exploration of robotics SoCs. As a driving application,
-we will look at autonomous quadrotor systems. This is because UAVs make
+we look at autonomous quadrotor systems. This is because UAVs make
 for an interesting design point due to the interactions between latency,
 power, and weight constraints [12], as well as the fact
 that the SoCs used onboard UAVs are comparable in scale to those
@@ -62,9 +62,9 @@ previously designed at the ADEPT Lab at UC Berkeley.
 
 In our project we focus on simulating a drone's hardware and software
 stack, along with a physical design to be used as a reference
-implementation. While we implemented a design that implements the computers,
+implementation. We implemented a design that implements the computers,
 actuators, and sensors as depicted in
-Figure [1] In this configuration, we have
+Figure [1]. In this configuration, we have
 both the flight controller and companion computer on-board the drone, as
 this design point has more interesting constraints for the companion
 computer SoC. We use ASPLOS21-Drone for physical prototyping drone in this project, which is an
@@ -74,11 +74,11 @@ of the software stack we plan on running on both the flight controller
 and companion computer is depicted in Figure [3].
 
 
-Secondly, a key component of our work will be developing the
-co-simulation infrastructure for our UAV. Our work will build upon two
+Secondly, a key component of our work involves developing the
+co-simulation infrastructure for our UAV. Our work builds upon two
 existing simulators. For simulating UAV dynamics and visual rendering we
-plan on using AirSim simulator
-based on Unreal Engine developed by Microsoft [13]. For
+plan on use the AirSim simulator
+, based on Unreal Engine developed by Microsoft [13]. For
 cycle-accurate SoC simulation, we use
 FireSim, an FPGA-accelerated RTL simulator developed
 at the ADEPT Lab at UC Berkeley. A top level diagram of our
@@ -87,7 +87,7 @@ major modifications to highlighted in red. These components mainly
 consist of the target-to-host bridges found in FireSim, which are
 responsible for the communication and synchronization between the host
 CPU managing the RTL simulation, and the target FPGA accelerating the
-simulation. Our modifications synchronize the clock cycles
+simulation. Our modifications will synchronize the clock cycles
 elapsed in the RTL simulation with the amount of time simulated in
 AirSim, as well as to schedule the data transfers between AirSim and the
 SoC I/O modeled by FireSim. Before moving robotics software to the
@@ -107,7 +107,7 @@ quality-of-flight metrics in quadrotors, such as mission time and
 maximum velocity [10]. Because these high level
 control tasks run on the companion computer, we identified this unit for
 our design-space exploration. Developing new custom hardware
-accelerators is out of the scope of this project. However, we still work on evaluating configurations of existing hardware, including the
+accelerators is out of the scope of this project. However, we will still work on evaluating configurations of existing hardware, including the
 in-order Rocket CPU [15], the out-of-order superscalar
 BOOM CPU [16], and Gemmini, a systolic array hardware
 generator [17]. We generate hardware designs
@@ -116,7 +116,7 @@ ADEPT Lab at UC Berkeley [18]. While discovering an optimal SoC
 configuration is out of the scope of this project, we use the
 designs to evaluate the co-simulation infrastructure.
 
-The project incorporate the sensing and actuation through the use
+The project incorporates sensing and actuation through the use
 of the ASPLOS21-Drone, which acts as a physical reference design for
 the co-simulation infrastructure. However, sensing and actuation have also 
 be explored through the simulated environment. Similarly, high
@@ -210,7 +210,7 @@ Tasks, Milestones, and Assessment
 
 This project includes a broad range of tasks, and relies heavily on
 infrastructure development. Accounting for this, we have not accomplish every task, given that there might be unexpected issues
-related with third-party components. We divided the tasks into Base,
+related with third-party components. We divide the tasks into Base,
 Target, and Reach, where we completed base tasks by mid November,
 Target tasks by the project deadline, and Reach tasks if time permits.
 As this is a continuing research project, we plan on continuing this
