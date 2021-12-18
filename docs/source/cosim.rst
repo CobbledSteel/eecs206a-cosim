@@ -74,19 +74,19 @@ of the software stack we plan on running on both the flight controller
 and companion computer is depicted in Figure [3].
 
 .. figure:: ./images/Hardware\ Architecture.png
-   :scale: 40 %
+   :scale: 20 %
    :alt: Figure 3
 
    Fig. 1: Electronics top level diagram for the proposed UAV.
 
 .. figure:: ./images/High\ Level\ Control.png
-   :scale: 40 %
+   :scale: 20 %
    :alt: Figure 3
 
    Fig. 2: An example software stack for both the flight controller and the companion computer.
 
 .. figure:: ./images/Flight\ Control.png
-   :scale: 40 %
+   :scale: 20 %
    :alt: Figure 3
 
    Fig. 2: An example software stack for both the flight controller and the companion computer.
