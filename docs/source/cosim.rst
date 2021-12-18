@@ -175,7 +175,7 @@ integrating two simulators to support closed-loop feedback.
    Fig. 3: Top level architecture for evaluating ROS workloads on the RISC-V software stack.
 
 .. figure:: ./images/AirSim-FireSim.png
-   :scale: 30 %
+   :scale: 20 %
    :alt: Figure 4
 
    Fig. 4: Top level architecture for the proposed co-simulation architecture
