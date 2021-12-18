@@ -246,6 +246,45 @@ The design was built from commercially avalable parts, and assembled by the team
 Bill of Materials
 -------------------
 
+A representation of all the parts needed for the drone are depicted in Figure [5]
+
+.. figure:: ./images/parts_list.png
+   :scale: 20 %
+   :alt: Figure 5
+
+   Fig. 5: A breakdown of all parts used to build the drone.
+
+
++---------------------+----------+--------+----------+
++ Component           +  Price   + Vendor +	Quantity +
++=====================+==========+========+==========+
++ F450  Frame	      +  21.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Motors	          +  38.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Propellers	      +  12.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Camera	          +  18.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Onboard Computer	  +  119.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Flight Controller	  +  205.00	 + Navio2 +	1        +
++---------------------+----------+--------+----------+
++ Speed Controller	  +  39.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Radio System	      +  47.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Encoder	          +  13.89	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Battery	          +  26.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Adhesive	          +  10.99	 + Amazon +	1        +
++---------------------+----------+--------+----------+
++ Total	              +  557.80	 +        +          +
++---------------------+----------+--------+----------+
+	
+
+
 Assembly and Bringup
 -------------------
 
