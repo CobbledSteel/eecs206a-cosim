@@ -620,9 +620,11 @@ and `f1.2xlarge` (Running FPGA-accelerated RTL simulations in FireSim.)
 Results
 ============
 
+First, you can see our first manual flight of Baby Bird below:
+
 .. raw:: html
 
-    <video width="320" height="240" controls><source src="./videos/BabyBird.mp4" type="video/mp4">Your browser does not support the video tag.</video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Al-fAdNxLU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Conclusion
 ============
