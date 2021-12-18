@@ -472,7 +472,7 @@ After this is done, one will have a RISC-V environment supporting ROS1 Noetic as
 
 
 .. figure:: ./images/ros-fedora.png
-   :scale: 20 %
+   :scale: 30 %
    :alt: Figure 12
 
    Fig. 12: ROS Noetic running in Feodra on RISC-V
@@ -620,11 +620,29 @@ and `f1.2xlarge` (Running FPGA-accelerated RTL simulations in FireSim.)
 Results
 ============
 
-First, you can see our first manual flight of Baby Bird below:
+First, the first manual flight of Baby Bird is shown below:
 
 .. raw:: html
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Al-fAdNxLU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Next, the demo of the Apriltag detection is shown below, as well as the tracking in RViz is shown belpw:
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=zQOlPFLN1iI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Finally, the final flight of Baby Bird is shown here, with an attempt at tracking the Apriltag is shown below:
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=Qq7CG1_hV3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+For the co-simulation aspect, an example where the drone is being simulated in AirSim and controlled through RISC-V QEMU is shown below:
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=e0LZBUgBmNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Conclusion
 ============
