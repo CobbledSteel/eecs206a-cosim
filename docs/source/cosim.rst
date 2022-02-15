@@ -626,7 +626,7 @@ First, the first manual flight of Baby Bird is shown below:
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/Al-fAdNxLU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
-    Next, the demo of the Apriltag detection is shown below, as well as the tracking in RViz is shown below:
+Next, the demo of the Apriltag detection is shown below, as well as the tracking in RViz is shown below:
 
 .. raw:: html
 
@@ -636,13 +636,13 @@ Finally, the final flight of Baby Bird is shown here, with an attempt at trackin
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/v=Qq7CG1_hV3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/e0LZBUgBmNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 For the co-simulation aspect, an example where the drone is being simulated in AirSim and controlled through RISC-V QEMU is shown below:
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/v=e0LZBUgBmNw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qq7CG1_hV3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Conclusion
 ============
