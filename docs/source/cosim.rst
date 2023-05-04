@@ -695,7 +695,7 @@ infrastructures and environments at the ADEPT Lab.
     – Purdue Aerial Robotics @ Purdue University
         - PCB design for a flight controller board and a ground station antenna tracker
 
-Chris Shengjun Dong
+Chris Dong
 ----------
 
 Chris is in charge of developing the software infrastructure via ROS and AirSim,
