@@ -704,7 +704,7 @@ controller, along with developing and testing high level algorithms both
 in simulation and on the real drone.
 
 + Education:
-    – Graduate: Master of Engineering in Development Engineering at UC Berkeley (In progress)
+    – Graduate: PhD in Electrical Engineering and Computer Sciences at UC Berkeley (In progress)
     – Undergraduate: BS in Computer Science, BS in Mathematics, and BBA in Finance from UMass Amherst
 + Work Experience:
     – Amazon AWS: Project Manager@Robotics Lab
